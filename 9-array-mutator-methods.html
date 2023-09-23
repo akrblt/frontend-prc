@@ -13,10 +13,22 @@
 
         const sayilar=[1,2,3,4,5];
         console.log(sayilar);
-        sayilar.pop();
+        sayilar.pop(); // en son elemani siler
         console.log(sayilar);
-        sayilar.push(5);
+        sayilar.push(5);// en sona eleman ekler
         console.log(sayilar);
+        sayilar.shift();// ilk elemani siler
+        console.log(sayilar);
+        sayilar.unshift(0);// basa eleman ekler
+        console.log(sayilar);
+        sayilar.reverse();//tersten yazdirir
+        console.log(sayilar);
+        sayilar.sort();// sayi ise kucukten buyuge dogru siralama yapar. Harf ise alfavetik
+        console.log(sayilar);
+        sayilar.splice(0,0,1);// ilk elemana 1 ekle hicbirseyi silme
+        console.log(sayilar);
+       // splice() methodu cok kullanisli bir methodtur. En az 2 parametreyle calisir. 1. parametre yeri, 2. paremetre 0 ise kalsin, 1 ise silinsin,
+       // 3. parametre ise eklenecek olan elemanlari kasteder
     </script>
     
 </body>
