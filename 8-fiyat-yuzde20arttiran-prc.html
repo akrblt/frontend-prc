@@ -24,7 +24,7 @@ document.querySelector("#btnToIncrease").addEventListener("click",()=>{
 });
 
 const calculateNewPrices=(a) =>{
-             
+             let newPrices=[];
     if(!a && typeof(a)!=="object" && a.length<=0) return;
     for(let i=0; i<a.length;i++){
         a [i]=(a[i]*1.2).toFixed(2);
