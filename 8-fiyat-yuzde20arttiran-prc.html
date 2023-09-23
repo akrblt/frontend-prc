@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btnToIncrease">Increase Prices % 20</button>
+
+
+    <script>
+
+
+
+const fiyatlar=[123,950,550,1000,10,50,90,80,70,60,50,40,30];
+console.log(fiyatlar);
+
+       
+document.querySelector("#btnToIncrease").addEventListener("click",()=>{
+  calculateNewPrices(fiyatlar);
+    alert(`Yuzde 20 fiyat artisi olan urunlerin yeni fiyatlari: ${fiyatlar} dir.`);
+});
+
+const calculateNewPrices=(a) =>{
+             
+    if(!a && typeof(a)!=="object" && a.length<=0) return;
+    for(let i=0; i<a.length;i++){
+        a [i]=(a[i]*1.2).toFixed(2);
+
+    }
+    return a;
+}
+
+console.log(fiyatlar);
+
+    </script>
+    
+</body>
+</html>
