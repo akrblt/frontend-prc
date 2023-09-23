@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button id="btnFind">Find the biggest number</button>
+
+
+    <script>
+
+        var sayilar=[5,12,56,14,67,89,33,22,100,5,12,56,14,67,89,33,22,100,150,130,170,11,195];
+        const length=sayilar.length;
+        console.log(length);
+        let MaxSayi=sayilar[0];
+        
+        //1. yontem
+        for( var i=0; i<length; i++){
+            if(sayilar[i]>MaxSayi){
+                MaxSayi=sayilar[i];
+               // i++;
+                console.log(MaxSayi)
+            }
+         //   i++;
+        
+
+        }
+      const max=  `${MaxSayi}: dizinin en buyuk sayisidir.`;
+      console.log(max);
+
+      //2. yontem
+      var sayilar2=[5,12,56,14,67,89,33,22,100,150,130,170,11,195];
+      let enbuyuk=Math.max(...sayilar2);
+      alert(enbuyuk);  
+
+      //3. Yontem
+
+      var sayilar3=[5,12,56,14,67,89,33,22,100,150,130,170,11,195];
+      let enbuyuk2=sayilar3.reduce((ilksayi,ikincisayi) => {
+        return (ikincisayi>ilksayi ? ikincisayi : ilksayi)
+      })
+      console.log(`Dizinin en buyuk sayisi:  ${enbuyuk2} dir.`);
+
+
+      //4. Yontem
+
+      
+      const arr=[5,55,555,7,77,777,9,99,999];
+      document.querySelector("#btnFind").addEventListener("click",()=>{
+
+        const MaxNumber=getMaxNumber(arr);
+        alert(`Dizinin en buyuk elemani: ${MaxNumber} dir.`)
+      });
+
+      const getMaxNumber=(a) =>{
+        if(!a && typeof(a)!=="object" && a.length<=0) return;
+        let maxNum=a[0];
+        for(let i=0; i<a.length; i++){
+            if(a[i]>maxNum) maxNum=a[i];
+        }
+
+        return maxNum;
+
+      }
+
+
+    </script>
+    
+</body>
+</html>
