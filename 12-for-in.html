@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+    <script>
+
+const adlar=["Ali","Ahmet","mehmet","Saban"];
+const soyadlar=["3","1","2","4"];
+
+const birlestir=(x,y)=>{
+    let adVeSoyadlar=[];
+    for(let i in x){
+        adVeSoyadlar[i]=`${x[i]} ${y[i]}`;
+        console.log(adVeSoyadlar);
+    }
+    return adVeSoyadlar;
+};
+
+console.log(birlestir(adlar,soyadlar));
+
+const cities=["Lausanne","Zurich","Berne"];
+// for of dongusu
+for(let city of cities ){
+    console.log(city);
+}
+
+for(let [index,value] of cities.entries()){
+    console.log(index,value);
+}
+
+
+
+    </script>
+    
+</body>
+</html>

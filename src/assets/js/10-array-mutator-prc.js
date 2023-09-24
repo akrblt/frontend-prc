@@ -35,6 +35,27 @@ document.querySelector("#btnAdd").addEventListener("click",()=>{
     loadList();
 });
 
+document.querySelector("#btnMix").addEventListener("click", ()=>{
+    getRandom();
+    loadList();
+});
+
+const getRandom=()=>{
+    const arr=[];
+
+    while(cities.length>0){
+        const rndIndex=Math.floor(Math.random()*cities.length);
+        const city=cities[rndIndex];
+        arr.push(city);
+        cities.splice(rndIndex,1);
+    }
+
+    cities.splice(0,0,...arr);
+    
+}
+
+
+
 
 
 const loadList=()=>{
