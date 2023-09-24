@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<select id="ddlAnimals"></select>
+
+    
+
+    <script>
+
+
+const animals=["At","Kedi","Tavsan","Essek","Timsah"];
+let options="";
+// for each loop 
+animals.forEach((animal,i)=>{
+    options+=`<option value="${i}"> ${animal} </option>`; // Backend den gelen datalari bir select in icinde gosterebilmek icin boyle bir yapi kullaniyoruz. 
+                                                          // verileri <option> </option> taginin icinde getirmeliyiz ve bu tag a value degeri verbiliyoruz.
+
+console.log(i,animal);
+/*
+Boylece verileri index numaralari ile bitrlikte getirebiliriz ve backen dede boyle gonderebiliriz.
+0 'At'
+1 'Kedi'
+ 2 'Tavsan'
+ 3 'Essek'
+ 4 'Timsah'
+*/
+                                                        });
+
+document.querySelector("#ddlAnimals").innerHTML=options;
+
+
+    </script>
+</body>
+</html>

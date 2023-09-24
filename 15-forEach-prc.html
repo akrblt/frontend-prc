@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        const numbers=[5,12,15,10,20,40];
+        // Bu dizinin elemanlarinin 5 katini alarak yeni bir diziye atayiniz.
+        const newNumbers=[];
+        numbers.forEach((num) => newNumbers.push(num*5));
+
+        console.log(numbers);
+        console.log(newNumbers);
+
+        // Bu dizinin elemanlari tekse 5 eklensin degilse 10 eklensin ve yeni bir dizide gosterilsin
+
+        const tekseCiftse=[];
+        numbers.forEach((sayi)=>{
+            if(sayi%2==0) sayi+=5;
+            else sayi+=10;
+            tekseCiftse.push(sayi);
+            console.log(sayi);
+           
+        });
+        console.log(tekseCiftse);
+
+        const tekseCiftseTernary=[];
+        numbers.forEach((sayi)=>{
+            (sayi%2==0) ? sayi+=5: sayi+=10;
+          
+            tekseCiftseTernary.push(sayi);
+            console.log(sayi);
+           
+        });
+        console.log(tekseCiftseTernary);
+
+
+    </script>
+
+    
+</body>
+</html>
