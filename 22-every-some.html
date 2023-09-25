@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        const nums=[123,5,8,7,45];
+
+        if(nums.every((num)=>num>0)){
+            alert("Butun sayilar pozitif");
+        }
+        else alert("En az bir tane negatif var"); 
+
+
+        const nums1=[123,5,8,7,45,-1];
+        if(nums1.some((num)=> num<0 )){
+            alert("En az bir tane negatif var")
+        }
+    </script>
+</body>
+</html>

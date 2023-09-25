@@ -26,6 +26,14 @@
         const total=nums.reduce((sum,e)=> sum+e,0);
         console.log(total);
 
+
+        // Reduce EX
+        // Bir firma 3000 tl den az olan maaslara yuzde 10 zam yapmak istiyor ve sonunda bu zam yapilan maaslarin toplamini bulmak istiyor
+
+        const salaries=[500,8500,7410,3000,5000,1000];
+        const toplamMaas=salaries.filter((salary)=>salary<3000).map((salary)=>salary*1.1).reduce((maasToplami,salary)=>maasToplami+salary,0);
+        console.log(toplamMaas);
+
     </script>
     
 </body>
