@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+// Size verilen icindeki negatif elemanlari alip pozitife cevirip yeni bir diziyte atayip ekrana yazdiriniz
+        const numbers=[12,50,-45,-89,85,-95,100,-60];
+        console.log(numbers);
+        const makeToPozitif=numbers.filter((num)=> num<0).map((num)=>num*=-1).forEach((num)=>console.log(num));
+    </script>
+    
+</body>
+</html>

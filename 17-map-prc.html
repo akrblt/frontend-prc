@@ -11,7 +11,7 @@
 
     <script>
         const prices=[50,150,99,100,250,500];
-        const newPrices=prices.map((price)=> price>100?price*=1.1:price*=1.15);
+        const newPrices=prices.map((price)=> ( price>100?price*=1.1:price*=1.15).toFixed(2));
         console.log(prices);
         console.log(newPrices);
     </script>
