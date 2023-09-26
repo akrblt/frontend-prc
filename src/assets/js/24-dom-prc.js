@@ -16,6 +16,7 @@ const loadStudents=()=>{
         `;
     });
     document.querySelector("#tblStudent tbody").innerHTML=strStudents;
+    console.log(`Good joob`)
 };
 
 
