@@ -9,6 +9,7 @@ const loadCountries=()=>{
        console.log(country);
     }
     document.querySelector("#ddlCountries").innerHTML=options;
+    document.querySelector("#area").innerHTML=countries.reduce((toplamAlan,contry)=>toplamAlan+contry.area,0);
 }
 
 const getCountry=(id)=>{
