@@ -18,6 +18,28 @@
    
     document.querySelector("#tblStudents tbody").innerHTML=students;
 
+ };
+
+
+
+ const setStudentBg=()=>{
+  const rows=document.querySelectorAll("#tblStudents tbody tr");
+  console.log(rows);
+  for(let row of rows){
+    const point = row.querySelector("td:nth-child(3)").innerHTML;
+    console.log(point);
+    if(point<50){
+      row.classList.add("table-danger");
+    }
+  }
  }
 
+
+
+
+
+
+
+
  loadStudents();
+ setStudentBg();
