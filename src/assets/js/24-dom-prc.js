@@ -16,7 +16,7 @@ const loadStudents=()=>{
         `;
     });
     document.querySelector("#tblStudent tbody").innerHTML=strStudents;
-    document;
+    
 };
 
 
