@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu">
+        <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, enim ex quam iste earum recusandae 
+            repellendus illum iure vero doloribus. Temporibus a cum officiis tempora quidem maiores, assumenda accusantium blanditiis.
+        </p>
+            <ul>
+                <li><a href="http://">Link 1</a></li>
+                <li><a href="http://" id="link">Link 2</a></li>
+                <li><a href="http://">Link 3</a></li>
+            </ul>
+        
+    </div>
+
+
+
+
+    <script>
+
+        document.querySelector("#link").addEventListener("click",(e)=>{
+           e.preventDefault(); // bu fonksiyon mevcut default davranisi engeller
+           console.log(e.target);
+
+           e.target.closest(".menu").querySelector(".desc").innerHTML=`Adam ol`;
+
+      console.log(document.querySelector(".menu").children)     ;
+      console.log(document.querySelector("#link").parentElement.parentElement.parentElement)     ;
+      
+        })
+
+
+
+    </script>
+    
+</body>
+</html>
