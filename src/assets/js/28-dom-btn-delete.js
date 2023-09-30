@@ -50,7 +50,7 @@ document.querySelectorAll("#tblStudent tbody tr").forEach((row)=>{
   row.addEventListener("click",(e)=>{
     e.target.closest("tr").classList.toggle("table-warning");
     
-    console.log()
+    
   })
 })
 
