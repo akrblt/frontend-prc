@@ -51,7 +51,7 @@ document.querySelectorAll("#tblStudent tbody tr").forEach((row)=>{
     e.target.closest("tr").classList.toggle("table-warning");
     
     
-    console.log()
+    
   })
 })
 
