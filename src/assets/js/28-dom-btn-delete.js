@@ -38,9 +38,18 @@ setStudentBg();
 document.querySelectorAll(".btn-delete").forEach((btn) =>{
   btn.addEventListener("click",(e)=>{
 // console.log(e.target);
+const row=e.target.closest("tr");
     const name=e.target.closest("tr").querySelector("td").innerText;
     //console.log(name);
-    const result=confirm(`${name} isimli kaydi silmek istediginizden emin misiniz?`)
+    const result=confirm(`${name} isimli kaydi silmek istediginizden emin misiniz?`);
+
+    if(!result) return;
+
+    row.remove();
+    
+
+
+
     
 
   })
