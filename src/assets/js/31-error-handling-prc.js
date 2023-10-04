@@ -18,8 +18,8 @@ document.querySelector("#frmLogin").addEventListener("submit", (e) => {
   });
   
   const isEmail = (email) => {
-    const regex = /\S+@\S+\.\S{2,5}$/;
+    const regex = /\S+@\S+\.\S{2,5}$/; // basa ve sona koyulan / lar regex slajlarudir
     // reqular expression -> https://regexr.com/
   
-    return regex.test(email);
+    return regex.test(email);;
   };
