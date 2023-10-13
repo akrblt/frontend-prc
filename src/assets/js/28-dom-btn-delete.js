@@ -43,7 +43,7 @@ const row=e.target.closest("tr");
     //console.log(name);
     const result=confirm(`${name} isimli kaydi silmek istediginizden emin misiniz?`);
 
-    if(!result) return;
+    if(!result) return;;
 
     row.remove();
     
