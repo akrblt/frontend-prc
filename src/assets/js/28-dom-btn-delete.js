@@ -45,7 +45,7 @@ const row=e.target.closest("tr");
 
     if(!result) return;
 
-    row.remove();
+    row.remove();;;;
     
 
 
